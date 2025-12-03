@@ -1,0 +1,918 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="ru"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;title&gt;Фёдор Конюхов «Путь к счастью» • Иммерсивная выставка в Кронштадте&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="description" content="Иммерсивная выставка Фёдора Конюхова «Путь к счастью». Кронштадт, 2025-2026."&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">&lt;!-- Предзагрузка критических ресурсов --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://unpkg.com"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="preconnect" href="https://cdnjs.cloudflare.com"&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">&lt;!-- Inline критический CSS --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1">:root {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--dark-navy: #0a1520;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--deep-blue: #0d1b2a;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--ocean-deep: #08121e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--gold: #d4af37;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--light-gold: #f4e8c1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>--warm-white: #f8f5f0;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">* {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>box-sizing: border-box;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">html {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>scroll-behavior: smooth;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: #0a1520;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: var(--warm-white);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>line-height: 1.6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>overflow-x: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>min-height: 100vh;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Критичные стили для первого экрана */</span></p>
+<p class="p1"><span class="s1">.hero-header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>min-height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Новый фон для первого экрана */</span></p>
+<p class="p1"><span class="s1">.hero-background {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>z-index: 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>animation: fadeInBg 2s ease 0.5s forwards;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>linear-gradient(rgba(10, 21, 32, 0.85), rgba(10, 21, 32, 0.9)),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>url('https://konyukhov.ru/wp-content/uploads/2021/03/MG_8309s.jpg') center/cover no-repeat;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">@keyframes fadeInBg {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>to { opacity: 1; }</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.hero-content {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>max-width: 1200px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>z-index: 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: relative;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Минимальные стили для анимации текста */</span></p>
+<p class="p1"><span class="s1">.handwriting span {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: inline-block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform: translateY(50px);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Скелетоны для изображений */</span></p>
+<p class="p1"><span class="s1">.img-placeholder {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: linear-gradient(90deg, #0d1b2a 25%, #15273d 50%, #0d1b2a 75%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background-size: 200% 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>animation: loading 1.5s infinite;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 20px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">@keyframes loading {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>0% { background-position: 200% 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>100% { background-position: -200% 0; }</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Основные стили текста */</span></p>
+<p class="p1"><span class="s1">.hero-subtitle {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: clamp(1.2rem, 2.5vw, 1.6rem);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin: 30px 0 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>animation: fadeIn 0.5s 2s forwards;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight: 300;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.date-location {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: clamp(1rem, 2vw, 1.2rem);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: var(--gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-bottom: 50px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>animation: fadeIn 0.5s 2.2s forwards;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight: 400;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">@keyframes fadeIn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>to { opacity: 1; }</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Кнопка */</span></p>
+<p class="p1"><span class="s1">.buy-ticket-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: inline-block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: linear-gradient(135deg, var(--gold), var(--light-gold));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: #0b1828;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 18px 60px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 50px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: clamp(1.1rem, 1.8vw, 1.4rem);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-decoration: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition: transform 0.3s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>animation: fadeIn 0.5s 2.4s forwards;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.buy-ticket-btn:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform: translateY(-5px);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Ссылки */</span></p>
+<p class="p1"><span class="s1">.text-link {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: var(--gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-decoration: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-bottom: 1px solid transparent;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition: border-color 0.3s ease;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.text-link:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-bottom-color: var(--gold);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Скрыть невидимые элементы */</span></p>
+<p class="p1"><span class="s1">[data-aos] {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition: opacity 0.8s ease, transform 0.8s ease;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">[data-aos].aos-animate {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity: 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform: none;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Слайдер */</span></p>
+<p class="p1"><span class="s1">.slider-container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>max-width: 900px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin: 0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>box-shadow: 0 20px 60px rgba(0,0,0,0.5);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.slider {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition: transform 0.5s ease;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.slide {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>min-width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height: 500px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: relative;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.slider-nav {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform: translateY(-50%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: rgba(0,0,0,0.5);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: var(--light-gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width: 50px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height: 50px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: 1.5rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition: background 0.3s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>z-index: 10;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.slider-nav:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: rgba(0,0,0,0.8);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.prev { left: 20px; }</span></p>
+<p class="p1"><span class="s1">.next { right: 20px; }</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.slider-dots {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>gap: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top: 20px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.dot {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: rgba(212,175,55,0.3);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition: background 0.3s ease;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.dot.active {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: var(--gold);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.more-images {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top: 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: 1.1rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: rgba(248,245,240,0.9);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Карта */</span></p>
+<p class="p1"><span class="s1">#map {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height: 400px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border: 2px solid var(--gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top: 20px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Контейнер для изображения перед текстом - УВЕЛИЧЕНА ВЫСОТА */</span></p>
+<p class="p1"><span class="s1">.hero-image-container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-bottom: 60px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>box-shadow: 0 20px 60px rgba(0,0,0,0.5);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.hero-image-container .img-placeholder {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height: 500px; /* Увеличена высота */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width: 100%;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Социальные сети */</span></p>
+<p class="p1"><span class="s1">.social-links {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>gap: 30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top: 50px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-bottom: 30px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.social-link {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: inline-flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width: 50px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height: 50px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: rgba(255,255,255,0.1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: var(--light-gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: 1.5rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-decoration: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition: all 0.3s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border: 1px solid rgba(212,175,55,0.3);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.social-link:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: var(--gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: #0b1828;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform: translateY(-5px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-color: var(--gold);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.social-placeholder {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: 0.9rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: rgba(136, 170, 204, 0.7);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Стили для однородных иконок */</span></p>
+<p class="p1"><span class="s1">.feature-icon {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: 3rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: var(--gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-bottom: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height: 80px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.feature-icon i {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: 2.5rem;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Стили для карточек с эксклюзивными возможностями - добавлены анимации */</span></p>
+<p class="p1"><span class="s1">.feature-card {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: rgba(255,255,255,0.03);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 40px 30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border: 1px solid rgba(212,175,55,0.2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.feature-card::before {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>content: '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: absolute;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>top: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>left: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: linear-gradient(135deg, rgba(212,175,55,0.05), rgba(244,232,193,0.05));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition: opacity 0.4s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>z-index: 0;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.feature-card:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform: translateY(-15px) scale(1.03);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-color: var(--gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>box-shadow: 0 25px 50px rgba(0,0,0,0.4),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>0 0 0 1px rgba(212,175,55,0.1),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>0 0 30px rgba(212,175,55,0.2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: rgba(255,255,255,0.05);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.feature-card:hover::before {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>opacity: 1;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.feature-card:hover .feature-icon {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transform: scale(1.1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-shadow: 0 0 20px rgba(212,175,55,0.5);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.feature-card:hover h3 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: var(--gold);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-shadow: 0 0 10px rgba(212,175,55,0.3);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.feature-icon, .feature-card h3, .feature-card p {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>position: relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>z-index: 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition: all 0.4s ease;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">.feature-card h3 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>transition: color 0.4s ease, text-shadow 0.4s ease;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Эффект свечения для иконок при наведении */</span></p>
+<p class="p1"><span class="s1">.feature-card:hover .feature-icon i {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>filter: drop-shadow(0 0 8px rgba(212,175,55,0.6));</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">&lt;!-- Отложенная загрузка остальных стилей --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Bad+Script:wght@400;700&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;noscript&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Bad+Script:wght@400;700&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/noscript&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">&lt;!-- Дефер загрузка AOS и Leaflet --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="preload" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" as="style" onload="this.onload=null;this.rel='stylesheet'"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;noscript&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/noscript&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;header class="hero-header"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- Новый фон с плавным появлением --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="hero-background"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="hero-content"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1 class="handwriting" style="font-family:'Bad Script',cursive;font-size:clamp(3rem,7vw,6rem);color:var(--light-gold);margin-bottom:30px;line-height:1.2;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span&gt;П&lt;/span&gt;&lt;span&gt;у&lt;/span&gt;&lt;span&gt;т&lt;/span&gt;&lt;span&gt;ь&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span&gt; &lt;/span&gt;&lt;span&gt;к&lt;/span&gt;&lt;span&gt; &lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span&gt;с&lt;/span&gt;&lt;span&gt;ч&lt;/span&gt;&lt;span&gt;а&lt;/span&gt;&lt;span&gt;с&lt;/span&gt;&lt;span&gt;т&lt;/span&gt;&lt;span&gt;ь&lt;/span&gt;&lt;span&gt;ю&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="title-line" style="height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);width:0;margin:30px auto 40px;animation:line 1.5s 1.5s forwards;"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p class="hero-subtitle"&gt;Иммерсивное путешествие в мир легендарного исследователя&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="date-location"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>15 декабря 2025 • Кронштадт, Музей военной и морской славы</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="btn-wrapper" style="margin:40px 0 60px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a href="https://individualnyy-predp-f1.timepad.ru/event/3566613/" target="_blank" class="buy-ticket-btn" onclick="countClick()"&gt;Приобрести билет&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="stats-container" style="display:flex;justify-content:center;gap:clamp(30px,5vw,60px);flex-wrap:wrap;opacity:0;animation:fadeIn 0.5s 2.6s forwards;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="stat-item" style="text-align:center;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat-number" id="clickCounter" style="font-size:clamp(2rem,4vw,3rem);color:var(--gold);font-weight:700;"&gt;0&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat-label" style="font-size:0.9rem;color:rgba(248,245,240,0.8);"&gt;Переходов к покупке&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="stat-item" style="text-align:center;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat-number" id="ticketCounter" style="font-size:clamp(2rem,4vw,3rem);color:var(--gold);font-weight:700;"&gt;0&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="stat-label" style="font-size:0.9rem;color:rgba(248,245,240,0.8);"&gt;Билетов продано&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/header&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">&lt;main&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section class="about-section" style="padding:80px 20px;max-width:1300px;margin:0 auto;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title" data-aos="fade-up" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);text-align:center;color:var(--light-gold);margin-bottom:60px;position:relative;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>Легенда океанов</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;span style="content:'';display:block;width:100px;height:3px;background:var(--gold);margin:20px auto 0;box-shadow:0 0 20px rgba(212,175,55,0.6);"&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Новое изображение перед текстом с увеличенной высотой --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="hero-image-container" data-aos="fade-up"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="img-placeholder" id="heroImage"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div style="display:grid;grid-template-columns:1fr;gap:60px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="about-text" data-aos="fade-up" style="font-family:'Inter',sans-serif;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="margin-bottom:1.5em;font-size:clamp(1rem,1.5vw,1.1rem);line-height:1.7;color:rgba(248,245,240,0.9);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;strong style="color:var(--light-gold);font-weight:600;"&gt;Фёдор Конюхов&lt;/strong&gt; — человек, который превратил одиночество в философию, а океан — в храм. Первый в мире, кто достиг пяти полюсов нашей планеты: Северного и Южного географических, Полюса относительной недоступности в Северном Ледовитом океане, Эвереста (полюс высоты) и мыса Горн (полюс яхтсменов).</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="margin-bottom:2em;font-size:clamp(1rem,1.5vw,1.1rem);line-height:1.7;color:rgba(248,245,240,0.9);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Он пересёк Атлантический океан на вёсельной лодке за рекордные 46 суток, совершил кругосветное плавание на яхте, прошёл на собачьих упряжках к Северному полюсу и совершил одиночный полёт вокруг света на воздушном шаре.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="quote" style="font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.2rem,2vw,1.5rem);color:var(--light-gold);padding:40px;border-left:3px solid var(--gold);background:rgba(212,175,55,0.05);margin:40px 0;border-radius:0 15px 15px 0;line-height:1.5;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>«Счастье — это когда ты находишься в гармонии с собой и миром. Океан научил меня этому — в его бескрайних просторах исчезает всё лишнее, остаётся только суть»</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="font-size:clamp(1rem,1.5vw,1.1rem);line-height:1.7;color:rgba(248,245,240,0.9);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>За свою жизнь Фёдор провёл в океанах более 1000 дней, написал более 3000 картин и 17 книг. Его картины — не просто изображения моря, а отпечатки души человека, который смотрел в глаза штормам и находил в них покой.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="margin-top:40px;font-size:clamp(1rem,1.5vw,1.1rem);line-height:1.7;color:rgba(248,245,240,0.9);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;strong&gt;Здесь Вы можете посмотреть работы путешественника:&lt;/strong&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;a href="https://konyukhov.ru/projects/paintings/?ysclid=mip2f9irtt746212813" target="_blank" class="text-link" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);"&gt;konyukhov.ru&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="margin-top:20px;font-size:clamp(1rem,1.5vw,1.1rem);line-height:1.7;color:rgba(248,245,240,0.9);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;strong&gt;Также посетите нашу выставку в Ростове-на-Дону:&lt;/strong&gt;<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;a href="https://artspacerostov.ru/" target="_blank" class="text-link" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold);"&gt;artspacerostov.ru&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section class="gallery-section" style="padding:80px 20px;background:rgba(13,27,42,0.3);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title" data-aos="fade-up" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);text-align:center;color:var(--light-gold);margin-bottom:60px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>Галерея работ</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="slider-container" data-aos="fade-up"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="slider" id="imageSlider"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Слайды будут добавлены через JavaScript --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button class="slider-nav prev" onclick="prevSlide()"&gt;‹&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;button class="slider-nav next" onclick="nextSlide()"&gt;›&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="slider-dots" id="sliderDots"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="more-images" data-aos="fade-up"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>Больше изображений Вы можете посмотреть &lt;a href="https://artfedor.ru/" target="_blank" class="text-link"&gt;здесь&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section class="features-section" style="padding:80px 20px;max-width:1400px;margin:0 auto;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title" data-aos="fade-up" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);text-align:center;color:var(--light-gold);margin-bottom:60px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>Эксклюзивные возможности</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="features-container" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,350px),1fr));gap:40px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card" data-aos="fade-up"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;i class="fas fa-book"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 style="font-size:1.3rem;color:var(--light-gold);margin-bottom:15px;"&gt;Розыгрыш книг с автографом&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="font-size:0.95rem;line-height:1.6;color:rgba(248,245,240,0.9);"&gt;Каждый билет — это шанс получить уникальное издание с личным автографом Фёдора Конюхова.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card" data-aos="fade-up" data-aos-delay="100"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;i class="fas fa-camera"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 style="font-size:1.3rem;color:var(--light-gold);margin-bottom:15px;"&gt;#КонюховКронштадт&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="font-size:0.95rem;line-height:1.6;color:rgba(248,245,240,0.9);"&gt;Публикуйте фото с выставки с нашим хештегом и получите эксклюзивный сувенир.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">      </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="feature-card" data-aos="fade-up" data-aos-delay="200"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="feature-icon"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;i class="fas fa-microphone-alt"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h3 style="font-size:1.3rem;color:var(--light-gold);margin-bottom:15px;"&gt;Аудиогид от автора&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="font-size:0.95rem;line-height:1.6;color:rgba(248,245,240,0.9);"&gt;Экскурсия в формате аудиорассказа от самого Фёдора Конюхова.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;section class="map-section" style="padding:80px 20px;max-width:1300px;margin:0 auto;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2 class="section-title" data-aos="fade-up" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);text-align:center;color:var(--light-gold);margin-bottom:60px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>Место проведения</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div data-aos="fade-up"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div id="map"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div style="text-align:center;margin-top:20px;color:rgba(248,245,240,0.8);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Кронштадт, ул. Петровская, 1&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="margin-top:10px;"&gt;Музей военной и морской славы&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/main&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">&lt;footer style="background:#060f1a;padding:80px 20px;text-align:center;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div style="font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2rem);color:var(--light-gold);margin-bottom:30px;line-height:1.3;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>Фёдор Конюхов «Путь к счастью»</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div style="font-size:clamp(0.9rem,1.5vw,1.1rem);line-height:1.6;margin-bottom:40px;color:rgba(248,245,240,0.9);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Кронштадт, ул. Петровская, 1&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p style="margin-top:10px;"&gt;Ежедневно с 12:00 до 22:00&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p style="margin-top:10px;font-size:0.9rem;color:rgba(136,170,204,0.8);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>По вопросам сотрудничества: +79381612468</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;a href="https://individualnyy-predp-f1.timepad.ru/event/3566613/" target="_blank" class="buy-ticket-btn" onclick="countClick()" style="margin-bottom:50px;"&gt;Купить билет онлайн&lt;/a&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;!-- Обновленные ссылки на соцсети --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="social-links"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="https://m.vk.com/artprostranstvorostov" target="_blank" class="social-link" title="ВКонтакте"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;i class="fab fa-vk"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="https://artspacerostov.ru/" target="_blank" class="social-link" title="Сайт выставки в Ростове-на-Дону"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;a href="#" class="social-link" title="Телеграм (канал в разработке)" onclick="event.preventDefault(); alert('Телеграм-канал в разработке');"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;i class="fab fa-telegram"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="social-placeholder"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>Присоединяйтесь к нашему сообществу!</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;p style="color:#88aacc;font-size:0.9rem;max-width:600px;margin:30px auto 0;line-height:1.6;padding-top:20px;border-top:1px solid rgba(136,170,204,0.2);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>© 2025 Иммерсивная выставка Фёдора Конюхова «Путь к счастью». Все права защищены.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/footer&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">&lt;!-- Ленивая загрузка JavaScript --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1">// Минимальные функции для первого экрана</span></p>
+<p class="p1"><span class="s1">function countClick() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>let c = (parseInt(localStorage.getItem('k2025') || 0)) + 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>localStorage.setItem('k2025', c);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.getElementById('clickCounter').textContent = c;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.getElementById('ticketCounter').textContent = Math.floor(c * 0.45);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">// Переменные для слайдера</span></p>
+<p class="p1"><span class="s1">let currentSlide = 0;</span></p>
+<p class="p1"><span class="s1">let slides = [];</span></p>
+<p class="p1"><span class="s1">let slider;</span></p>
+<p class="p1"><span class="s1">let dotsContainer;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">// ИЗОБРАЖЕНИЯ ДЛЯ СЛАЙДЕРА</span></p>
+<p class="p1"><span class="s1">const sliderImages = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>'https://konyukhov.ru/wp-content/uploads/2024/03/kDngZwniqNg.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>'https://rostovchanka-media.ru/images/news-1/konvistrostov17.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>'https://konyukhov.ru/wp-content/uploads/2024/03/Q17r2IOZSHU.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>'https://cdnstatic.rg.ru/uploads/images/181/32/95/lodka__kopiia.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>'https://kudamoscow.ru/uploads/0bb6b83698594c793be0f04116b38261.jpg',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>'https://riavrn.ru/media/archive/image/2022/09/vN0JZ13cdr2bTVUznMaAGNAK_hm1ROxn.jpg'</span></p>
+<p class="p1"><span class="s1">];</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">// Инициализация слайдера</span></p>
+<p class="p1"><span class="s1">function initSlider() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>slider = document.getElementById('imageSlider');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>dotsContainer = document.getElementById('sliderDots');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Создаем слайды</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>sliderImages.forEach((imgUrl, index) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const slide = document.createElement('div');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>slide.className = 'slide';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>slide.innerHTML = `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="img-placeholder" style="height:100%;" data-src="${imgUrl}"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>slider.appendChild(slide);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>slides.push(slide);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Создаем точки</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const dot = document.createElement('button');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>dot.className = 'dot' + (index === 0 ? ' active' : '');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>dot.setAttribute('onclick', `goToSlide(${index})`);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>dotsContainer.appendChild(dot);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Автоматическое перелистывание</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>setInterval(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>nextSlide();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}, 5000);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Ленивая загрузка изображений</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>lazyLoadImages();</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">// Функции слайдера</span></p>
+<p class="p1"><span class="s1">function nextSlide() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>currentSlide = (currentSlide + 1) % slides.length;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>updateSlider();</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">function prevSlide() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>currentSlide = (currentSlide - 1 + slides.length) % slides.length;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>updateSlider();</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">function goToSlide(index) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>currentSlide = index;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>updateSlider();</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">function updateSlider() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>slider.style.transform = `translateX(-${currentSlide * 100}%)`;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Обновляем активную точку</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.querySelectorAll('.dot').forEach((dot, index) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>dot.classList.toggle('active', index === currentSlide);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">// Загрузка главного изображения</span></p>
+<p class="p1"><span class="s1">function loadHeroImage() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const heroImage = document.getElementById('heroImage');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (heroImage) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const img = new Image();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>img.src = 'https://storage.yandexcloud.net/storage.yasno.media/nat-geo/images/2024/10/31/6e48becd01e94e5bab00737ac4676ebb.max-2500x1500.jpg';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>img.onload = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>heroImage.style.backgroundImage = `url(${img.src})`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>heroImage.style.backgroundSize = 'cover';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>heroImage.style.backgroundPosition = 'center';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>heroImage.style.animation = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>img.onerror = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>// Если изображение не загружается, используем fallback</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>heroImage.style.backgroundImage = 'linear-gradient(135deg, var(--gold), var(--light-gold))';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>heroImage.style.animation = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">// Ленивая загрузка изображений</span></p>
+<p class="p1"><span class="s1">function lazyLoadImages() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const imageObservers = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const observer = new IntersectionObserver((entries) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>entries.forEach(entry =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (entry.isIntersecting) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const img = entry.target;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const src = img.getAttribute('data-src');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (src) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>const image = new Image();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>image.src = src;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>image.onload = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>img.style.backgroundImage = `url(${src})`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>img.style.backgroundSize = 'cover';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>img.style.backgroundPosition = 'center';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>img.style.animation = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>image.onerror = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Если изображение не загружается, оставляем плейсхолдер</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>console.log('Не удалось загрузить изображение:', src);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>observer.unobserve(img);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}, { rootMargin: '50px' });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.querySelectorAll('.img-placeholder[data-src]').forEach(img =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>observer.observe(img);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>return imageObservers;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">// Инициализация карты</span></p>
+<p class="p1"><span class="s1">function initMap() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (typeof L === 'undefined') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Динамически загружаем Leaflet</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const leafletCSS = document.createElement('link');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>leafletCSS.rel = 'stylesheet';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>leafletCSS.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.head.appendChild(leafletCSS);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const leafletScript = document.createElement('script');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>leafletScript.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>leafletScript.onload = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>createMap();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.head.appendChild(leafletScript);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>createMap();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">function createMap() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const map = L.map('map').setView([59.9925, 29.7758], 16);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>attribution: '&amp;copy; OpenStreetMap contributors',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>maxZoom: 19</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}).addTo(map);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>L.marker([59.9925, 29.7758]).addTo(map)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.bindPopup('&lt;b&gt;Музей военной и морской славы&lt;/b&gt;&lt;br&gt;Кронштадт, ул. Петровская, 1')</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.openPopup();</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">// Главная функция инициализации</span></p>
+<p class="p1"><span class="s1">window.onload = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Анимация заголовка</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const spans = document.querySelectorAll('.handwriting span');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>spans.forEach((span, index) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>span.style.animation = `write 1.2s cubic-bezier(0.23,1,0.32,1) ${0.5 + index * 0.18}s forwards`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Анимация линии</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const line = document.querySelector('.title-line');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>line.style.animation = 'line 1.5s 1.5s forwards';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Счётчик</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>let c = localStorage.getItem('k2025') || 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.getElementById('clickCounter').textContent = c;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.getElementById('ticketCounter').textContent = Math.floor(c * 0.45);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Загрузка главного изображения</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>loadHeroImage();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Инициализация слайдера</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>initSlider();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Инициализация карты</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>initMap();</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// Простая реализация AOS</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const observer = new IntersectionObserver((entries) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>entries.forEach(entry =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>if (entry.isIntersecting) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>entry.target.classList.add('aos-animate');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}, { threshold: 0.1 });</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">  </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>document.querySelectorAll('[data-aos]').forEach(el =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>observer.observe(el);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>});</span></p>
+<p class="p1"><span class="s1">};</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">// Ключевые стили анимации</span></p>
+<p class="p1"><span class="s1">const styleSheet = document.createElement('style');</span></p>
+<p class="p1"><span class="s1">styleSheet.textContent = `</span></p>
+<p class="p1"><span class="s1">@keyframes write {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>0% { opacity:0; transform:translateY(60px) rotate(-16deg) scale(0.7); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>70% { transform:translateY(-8px) rotate(4deg) scale(1.1); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>100% { opacity:1; transform:translateY(0) rotate(0) scale(1); }</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">@keyframes line {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>to { width: min(80%, 600px); }</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">@keyframes fadeIn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>to { opacity: 1; }</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">/* Адаптивность */</span></p>
+<p class="p1"><span class="s1">@media (max-width: 768px) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.hero-header { min-height: 90vh; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.slider-container { max-width: 100%; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.slide { height: 400px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.slider-nav { width: 40px; height: 40px; font-size: 1.2rem; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.feature-card { padding: 30px 20px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.hero-image-container .img-placeholder { height: 400px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.social-links { gap: 20px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.social-link { width: 45px; height: 45px; font-size: 1.3rem; }</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">@media (max-width: 480px) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.hero-header { min-height: 85vh; padding: 15px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.buy-ticket-btn { padding: 15px 40px; font-size: 1.1rem; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.stats-container { gap: 30px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.slide { height: 300px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.slider-nav { width: 35px; height: 35px; font-size: 1rem; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.hero-image-container .img-placeholder { height: 300px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.social-links { gap: 15px; margin-top: 30px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.social-link { width: 40px; height: 40px; font-size: 1.2rem; }</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">`;</span></p>
+<p class="p1"><span class="s1">document.head.appendChild(styleSheet);</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">&lt;!-- Дефер загрузка иконок FontAwesome --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;noscript&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/noscript&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
